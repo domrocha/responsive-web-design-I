@@ -1,3 +1,223 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+.container {
+	margin: auto;
+	width: 800px;
+}
+
+header nav{
+	display: inline-block;
+}
+
+header nav a{
+	margin: 30px;
+	display: inline-block;
+	font-size: 9px;
+}
+
+.coa {
+	display: inline-block;
+}
+
+.coa-text {
+	margin: 80px;
+	font-size: 65px;
+	display: inline-block;
+	text-align: center;
+}
+
+section img{
+	width: 300px;
+	height: 300px;
+}
+
+.content {
+	display: inline-block;
+	margin: 15px;
+	font-size: 15px;
+}
+
+section footer {
+	display: inline-block;
+	margin-top: 20px;
+	height: 150px;
+	width: 150px;
+	font-size: 12px;
+	
+
+}
+.content img {
+	width: 800px;
+	
+}
+
+.div1 {
+	display: inline-block;
+	width: 375px;
+	height: 150px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+.div2 {
+	display: inline-block;
+	width: 375px;
+	height: 150px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+.div3 {
+	display: inline-block;
+	width: 250px;
+	height: 175px;
+	margin-top: 20px;
+}
+
+.div4 {
+	display: inline-block;
+	width: 250px;
+	height: 175px;
+	margin-top: 20px;
+}
+
+.div5 {
+	display: inline-block;
+	width: 250px;
+	height: 175px;
+	margin-top: 20px;
+}
+
+hr {
+	display: inline-block;
+	width: 800px;
+	margin: auto;
+	border-top: 1px solid black;
+}
+
+p {
+	text-align: center;
+	font-size: 12px;
+}
+
+a:link {
+	text-decoration: none;
+	color: gray;
+}
+
+
+@media (max-width: 800px){
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		
+		/* justify-content: center; */
+		
+	}
+	
+	.content{
+		align-self: auto;
+	}
+
+	.content img{
+		width: 100%;
+	}
+
+	.coa-text{
+		top: 50%;
+		left: 50%;
+		display: block;
+	
+	}
+
+	.coa-text h1{
+		font-size: 85px;
+	}
+	
+	.coa-text button{
+		font-size: 15px;
+		border-radius: 4px;
+	}
+
+	.coa img { 
+		visibility: hidden;
+	} 
+}
+
+
+@media (max-width: 500px){
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center
+	}
+	
+	 
+	
+	
+
+}
